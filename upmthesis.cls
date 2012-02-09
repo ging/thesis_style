@@ -12,7 +12,7 @@
 %%% I would appreciate any help/comments and improvements. The goal is
 %%% to make this an official ETSIT UPM thesis style for LaTeX2e.
 %%%
-\ProvidesClass{upmthesis}[2011/11/24 Thesis Class, DIT, Universidad Politecnica de Madrid, jca]
+\ProvidesClass{thesis_style/upmthesis}[2011/11/24 Thesis Class, DIT, Universidad Politecnica de Madrid, jca]
 
 \LoadClass[a4paper,11pt,twoside]{report}
 
