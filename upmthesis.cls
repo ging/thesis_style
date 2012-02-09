@@ -7,22 +7,11 @@
 %%%
 %%% =========================================================================
 %%%
-%%% This is a port of the original Rice thesis style for LaTeX to
-%%% LaTeX2e. The port is still not complete but it does work with a 
-%%% few minor hacks in your actual documant (e.g., the linespacing for
-%%% tables is not right but can be fixed by inserting the command 
-%%% '\linespacing{1}' inside the 'table' environemnt as nedded for
-%%% tabular data). 
-%%%
-%%% This is not a clean and optimal LaTeX2e class port yet. I am working
-%%% on that but this class file has been used for a PhD thesis that did 
-%%% pass a preliminary inspection by the graduate office.
+%%% This is not a clean and optimal LaTeX2e class port yet.
 %%%
 %%% I would appreciate any help/comments and improvements. The goal is
-%%% to make this an official ETSIT UPM thesis style for LaTeX2e that can
-%%% exist in parallel with the old LaTeX thesis style.
+%%% to make this an official ETSIT UPM thesis style for LaTeX2e.
 %%%
-%%\NeedsTeXFormat{LaTeX2e}[1994/12/01]
 \ProvidesClass{upmthesis}[2011/11/24 Thesis Class, DIT, Universidad Politecnica de Madrid, jca]
 
 \LoadClass[a4paper,11pt,twoside]{report}
@@ -34,14 +23,15 @@
 
 %\setlength{\paperheight}{297mm}%
 %\setlength{\paperwidth}{210mm}%
-\graphicspath{{./thesis_style/logos/}}
+
 \DeclareOption{twoside}{\@twosidetrue}
+
+\graphicspath{{thesis_style/logos/}}
 
 \ProcessOptions
 
 \newif\if@upmthesis
 \@upmthesistrue
-\vbadness=10000
 
 \newcommand{\makefrontmatter}[2]{
 
@@ -118,11 +108,8 @@
 
 
 \skip\footins 18pt plus 12pt minus 6pt
-
 \floatsep 24pt plus 6pt minus 6pt
-
 \textfloatsep 36pt plus 10pt minus 10pt
-
 \intextsep 24pt plus 6pt minus 6pt
 
 \def\@pnumwidth{1.55em}
