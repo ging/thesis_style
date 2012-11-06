@@ -21,6 +21,9 @@
 \RequirePackage[dvips]{graphicx}
 \RequirePackage[usenames,dvipsnames]{color}
 
+\RequirePackage[T1]{fontenc}
+\RequirePackage{times}
+
 %\setlength{\paperheight}{297mm}%
 %\setlength{\paperwidth}{210mm}%
 
@@ -206,17 +209,18 @@
 \newcommand{\art}{\@coverart}
 
 \newcommand{\etsitlogo}{%
-  \includegraphics[scale=0.9]{etsit.eps}}
+  \includegraphics[width=0.6\textwidth]{logoETSIT.eps}}
 
 \def\makecover{%
 \begin{titlepage}
   \null\linespacing{1}\setcounter{page}{1}\vfill
   \vbox to 0pt{\vss\vbox to 8.75in{\parskip 0pt \parindent 0pt\centering
-      \upmlogo \vskip 0pt plus 1fil
       {\Large \bf \uppercase\expandafter{\@university} \par} \vskip 0pt plus 1fil
       {\Large \@school \par} \vskip 0pt plus 4fil
-      {\Large \bf \uppercase\expandafter{\@degree} \par} \vskip 0pt plus 1fil
-      {\large \uppercase\expandafter{\@title} \par} \vskip 0pt plus 4.5fil
+      \etsitlogo \vskip 0pt plus 4fil
+      
+      {\Large \bf \uppercase\expandafter{\@title} \par} \vskip 0pt plus 2fil
+      {\Large \uppercase\expandafter{\@degree} \par} \vskip 0pt plus 3.5fil
       {\Large \bf \@author \par}  \vskip 0pt plus 0fil
       {\large \bf \textit{\@authortitle} \par}  \vskip 0pt plus .8fil
       {\large \@city, \@country \par} \vskip 0pt plus 0fil
@@ -230,7 +234,7 @@
   \vbox to 0pt{\vss\vbox to 8.75in{\parskip 0pt \parindent 0pt\centering
       {\large \bf \@department \par} \vskip 0pt plus 1fil
       {\large \bf \@school \par} \vskip 0pt plus 3fil
-      \etsitlogo \vskip 0pt plus 3fil
+      \upmlogo \vskip 0pt plus 3fil
       {\large \uppercase\expandafter{\@title} \par} \vskip 0pt plus 1.3fil
       {\Large \bf \uppercase\expandafter{\@degree} \par} \vskip 0pt plus 6.5fil
       {\large \bf Autor: \@author \par} \vskip 0pt plus 0fil
