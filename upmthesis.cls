@@ -434,7 +434,7 @@
 \if@twoside\else\raggedbottom\fi
 
 \pagenumbering{roman}
-\def\thefootnote{\fnsymbol{footnote}}
+\def\thefootnote{\roman{footnote}}
 
 %
 % Until Graduate Studies comes to their senses, put all page numbers
