@@ -36,7 +36,7 @@
 \newif\if@upmthesis
 \@upmthesistrue
 
-\newcommand{\makefrontmatter}[2]{
+\newcommand{\makefrontmatter}[3]{
 
 \makeindex
 \begin{document}
@@ -51,6 +51,7 @@
    \tableofcontents
    \listoffigures
    \listoftables
+   \include{#3}
   \end{frontmatter}
 \pagenumbering{arabic}
 \linespacing{1.5}
@@ -329,6 +330,13 @@
  {\hfil}Acknowledgments}}
 
 \def\endacknowledge{\setcounter{footnote}{0}}
+
+\def\acronyms{\chapter*{Acronyms}\thispagestyle{empty}
+ \setcounter{footnote}{0}
+ \addcontentsline{toc}{frontmatter}{\protect\numberline
+ {\hfil}List of Acronyms}}
+
+\def\endacronyms{\setcounter{footnote}{0}}
 
 \def\preface{\chapter*{Preface} \thispagestyle{empty}
  \setcounter{footnote}{0}
