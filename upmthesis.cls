@@ -54,7 +54,7 @@
    \include{#3}
   \end{frontmatter}
 \pagenumbering{arabic}
-\linespacing{1.5}
+\linespacing{1.2}
 
 }
 \definecolor{orange}{rgb}{1,0.5,0}
@@ -414,12 +414,11 @@
 \if@twoside
 \def\ps@headings{%
   \let\@mkboth\markboth
-  \def\@oddfoot{}
-  \def\@evenfoot{}
-  \def\@evenhead{\rm \thepage\hfil \sl \leftmark}
-  \def\@oddhead{\hbox{}\sl \rightmark \hfil \rm\thepage}
-  \def\chaptermark##1{\markboth {\uppercase{\ifnum \c@secnumdepth >\m@ne
-        \@chapapp\ \thechapter. \ \fi ##1}}{}}
+  \def\@oddfoot{\centerline{\rm \thepage}}
+  \def\@evenfoot{\centerline{\rm \thepage}}
+  \def\@evenhead{\hfil \sl \leftmark}
+  \def\@oddhead{\hbox{}\sl \rightmark \hfil}
+  \def\chaptermark##1{\markboth {\uppercase{##1}}{}}
   \def\sectionmark##1{\markright {\uppercase{\ifnum \c@secnumdepth >\z@
         \thesection. \ \fi ##1}}}}
 \else
