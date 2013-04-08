@@ -305,7 +305,7 @@
 \def\abstract{\cleardoublepage \pagestyle{empty} \global\@topnum\z@
  \@afterindentfalse \begingroup
  \def \baselinestretch{1} \parskip \z@ \parindent \z@ \par
- \null \centering {{\center{ABSTRACT}}} \vskip .4in \par
+ \null \centering {{\center{\textbf{ABSTRACT}}}} \vskip .4in \par
 \endgroup \setcounter
  {footnote}{0}\def\thefootnote{\fnsymbol{footnote}}\addcontentsline
  {toc}{frontmatter}{\protect\numberline {\hfil}Abstract}}
@@ -316,7 +316,7 @@
 \def\resumen{\cleardoublepage \pagestyle{empty} \global\@topnum\z@
  \@afterindentfalse \begingroup
  \def \baselinestretch{1} \parskip \z@ \parindent \z@ \par
- \null \centering {{\center{RESUMEN}}} \vskip .1in \par
+ \null \centering {{\center{\textbf{RESUMEN}}}} \vskip .1in \par
 \endgroup \setcounter
  {footnote}{0}\def\thefootnote{\fnsymbol{footnote}}\addcontentsline
  {toc}{frontmatter}{\protect\numberline {\hfil}Resumen}}
