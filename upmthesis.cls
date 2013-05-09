@@ -325,6 +325,7 @@
   \pagestyle{plain}\thispagestyle{empty}}
 
 \def\acknowledge{\chapter*{Acknowledgments}\thispagestyle{empty}
+ \linespacing{1.2}
  \setcounter{footnote}{0}
  \addcontentsline{toc}{frontmatter}{\protect\numberline
  {\hfil}Acknowledgments}}
