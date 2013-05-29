@@ -256,13 +256,13 @@
       \vskip 1em
       \def\and{\par \vskip 0em plus 1fil\moveright\leftskip%
         \vbox{\hrule width \leftskip}} 
-        Presidente: \hrulefill \and
-        Vocal: \hrulefill \and
-        Vocal: \hrulefill \and
-        Vocal: \hrulefill \and
-        Secretario: \hrulefill \and
-        Suplente: \hrulefill \and
-        Suplente: \hrulefill
+        Presidente: \@committeepresident \and
+        Vocal: \@committeevocala \and
+        Vocal: \@committeevocalb \and
+        Vocal: \@committeevocalc \and
+        Secretario: \@committeesecretary \and
+        Suplente: \@committeesubstitutea \and
+        Suplente: \@committeesubstituteb
   \par
       \endgroup \vskip 0pt plus 3fil
       { Realizado el acto de defensa y lectura de la Tesis el d\'ia \@day~de 
@@ -282,6 +282,13 @@
 \def\coverart#1{\gdef\@coverart{#1}}
 \def\degree#1{\gdef\@degree{#1}}
 \def\committee#1{\gdef\@committee{#1}}
+\def\committeepresident#1{\gdef\@committeepresident{#1}}
+\def\committeevocala#1{\gdef\@committeevocala{#1}}
+\def\committeevocalb#1{\gdef\@committeevocalb{#1}}
+\def\committeevocalc#1{\gdef\@committeevocalc{#1}}
+\def\committeesecretary#1{\gdef\@committeesecretary{#1}}
+\def\committeesubstitutea#1{\gdef\@committeesubstitutea{#1}}
+\def\committeesubstituteb#1{\gdef\@committeesubstituteb{#1}}
 \def\bigcommittee#1{\@bigcommitteetrue\gdef\@committee{#1}}
 \def\addr#1#2{\gdef\@city{#1}\gdef\@country{#2}}
 \def\donedate#1#2#3{\gdef\@day{#1}\gdef\@month{#2}\gdef\@year{#3}} 
