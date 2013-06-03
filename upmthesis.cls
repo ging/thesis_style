@@ -256,18 +256,18 @@
       \vskip 1em
       \def\and{\par \vskip 0em plus 1fil\moveright\leftskip%
         \vbox{\hrule width \leftskip}} 
-        Presidente: \@committeepresident \and
-        Vocal: \@committeevocala \and
-        Vocal: \@committeevocalb \and
-        Vocal: \@committeevocalc \and
-        Secretario: \@committeesecretary \and
-        Suplente: \@committeesubstitutea \and
-        Suplente: \@committeesubstituteb
+        {\small \textbf{Presidente:}} \@committeepresident \and
+        {\small \textbf{Vocal:}} \@committeevocala \and
+        {\small \textbf{Vocal:}} \@committeevocalb \and
+        {\small \textbf{Vocal:}} \@committeevocalc \and
+        {\small \textbf{Secretario:}} \@committeesecretary \and
+        {\small \textbf{Suplente:}} \@committeesubstitutea \and
+        {\small \textbf{Suplente:}} \@committeesubstituteb
   \par
       \endgroup \vskip 0pt plus 3fil
       { Realizado el acto de defensa y lectura de la Tesis el d\'ia \@day~de 
   \@month~de \@year~en \@city, habiendo obtenido la calificaci\'on 
-  de \hrulefill \par} \vskip 0pt plus 5fil
+  de \par} \vskip 0pt plus 5fil
       {  El presidente, {\hskip 0pt plus 3fil } El secretario, {\hskip 0pt plus 4fil} Los vocales, \par} \vskip 0pt plus 5fil
       }} \cleardoublepage
 \end{titlepage}}
@@ -309,27 +309,21 @@
  November\or December\fi}
 \def\@year{\number\year}
 
-\def\abstract{\cleardoublepage \pagestyle{empty} \global\@topnum\z@
- \@afterindentfalse \begingroup
- \def \baselinestretch{1} \parskip \z@ \parindent \z@ \par
- \null \centering {{\center{\textbf{ABSTRACT}}}} \vskip .4in \par
-\endgroup \setcounter
- {footnote}{0}\def\thefootnote{\fnsymbol{footnote}}\addcontentsline
- {toc}{frontmatter}{\protect\numberline {\hfil}Abstract}}
+\def\abstract{\chapter*{Abstract}\thispagestyle{empty}
+ \linespacing{1.2}
+ \setcounter{footnote}{0}
+ \addcontentsline{toc}{frontmatter}{\protect\numberline
+ {\hfil}Abstract}}
 
-\def\endabstract{\setcounter{footnote}{0}
-  \pagestyle{plain}\thispagestyle{empty}}
+\def\endacknowledge{\setcounter{footnote}{0}}
 
-\def\resumen{\cleardoublepage \pagestyle{empty} \global\@topnum\z@
- \@afterindentfalse \begingroup
- \def \baselinestretch{1} \parskip \z@ \parindent \z@ \par
- \null \centering {{\center{\textbf{RESUMEN}}}} \vskip .1in \par
-\endgroup \setcounter
- {footnote}{0}\def\thefootnote{\fnsymbol{footnote}}\addcontentsline
- {toc}{frontmatter}{\protect\numberline {\hfil}Resumen}}
+\def\resumen{\chapter*{Resumen}\thispagestyle{empty}
+ \linespacing{1.2}
+ \setcounter{footnote}{0}
+ \addcontentsline{toc}{frontmatter}{\protect\numberline
+ {\hfil}Resumen}}
 
-\def\endresumen{\setcounter{footnote}{0}
-  \pagestyle{plain}\thispagestyle{empty}}
+\def\endacknowledge{\setcounter{footnote}{0}}
 
 \def\acknowledge{\chapter*{Acknowledgments}\thispagestyle{empty}
  \linespacing{1.2}
